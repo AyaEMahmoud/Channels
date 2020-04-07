@@ -15,7 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="y5e-hB-kfl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="BaP-ta-v0P">
+                                <rect key="frame" x="147" y="388" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="12h-Kp-gxA"/>
+                                    <constraint firstAttribute="height" constant="120" id="dNL-a4-RNC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="y5e-hB-kfl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A6v-tK-Tr5"/>
+                            <constraint firstAttribute="bottom" secondItem="y5e-hB-kfl" secondAttribute="bottom" id="Ak2-AK-puI"/>
+                            <constraint firstItem="y5e-hB-kfl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="MGe-Za-P1c"/>
+                            <constraint firstItem="BaP-ta-v0P" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XSX-zQ-h0C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y5e-hB-kfl" secondAttribute="trailing" id="Ztu-Cl-JH5"/>
+                            <constraint firstItem="BaP-ta-v0P" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yqF-tn-QOt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -24,4 +44,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="3" width="1000" height="1000"/>
+        <image name="iTunesArtwork" width="512" height="512"/>
+    </resources>
 </document>
